@@ -19,7 +19,8 @@ BaseKr = [
             "Хоразм вилояти",
             "Тошкент шаҳри"
         ),
-        'more_answers': False
+        'more_answers': False,
+        'long_answers': False
     },
     {
         # 2
@@ -28,7 +29,8 @@ BaseKr = [
         'answers': (
             "1", "2", "3", "4", "5", "6", "7", "8 ва ундан ортиқ",
         ),
-        'more_answers': False
+        'more_answers': False,
+        'long_answers': False
     },
     {
         # 3
@@ -51,7 +53,8 @@ BaseKr = [
             "якка тартибдаги тадбиркорлик",
             "бошқалар",
         ),
-        'more_answers': True
+        'more_answers': True,
+        'long_answers': True
     },
     {
         # 4
@@ -75,7 +78,8 @@ BaseKr = [
             "28 млн сўмдан 30 млн сўмгача",
             "30 млн сўм ва ундан юқори",
         ),
-        'more_answers': False
+        'more_answers': False,
+        'long_answers': False
     },
     {
         # 5
@@ -86,7 +90,8 @@ BaseKr = [
             "ҳа",
             "йўқ",
         ),
-        'more_answers': False
+        'more_answers': False,
+        'long_answers': False
     },
     {
         # 6
@@ -100,7 +105,8 @@ BaseKr = [
             "8 млн сўмдан 10 млн сўмгача",
             "10 млн сўм ва ундан юқори",
         ),
-        'more_answers': False
+        'more_answers': False,
+        'long_answers': False
     },
     {
         # 7
@@ -110,7 +116,8 @@ BaseKr = [
             "ҳа",
             "йўқ"
         ),
-        'more_answers': False
+        'more_answers': False,
+        'long_answers': False
     },
     {
         # 8
@@ -129,7 +136,8 @@ BaseKr = [
 
             "бошқа қарзлар",
         ),
-        'more_answers': True
+        'more_answers': True,
+        'long_answers': True
     },
     {
         # 9
@@ -149,7 +157,8 @@ BaseKr = [
             "бошқа кредит ёки қарзни тўлаш",
             "бошқалар"
         ),
-        'more_answers': True
+        'more_answers': True,
+        'long_answers': True
     },
     {
         # 10
@@ -168,7 +177,8 @@ BaseKr = [
             "18 млн сўмдан 20 млн сўмгача",
             "20 млн сўм ва ундан юқори"
         ),
-        'more_answers': False
+        'more_answers': False,
+        'long_answers': False
     },
     {
         # 11
@@ -182,7 +192,8 @@ BaseKr = [
             "4 йилдан 5 йилгача",
             "5 йил ва ундан юқори",
         ),
-        'more_answers': False
+        'more_answers': False,
+        'long_answers': False
     },
     {
         # 12
@@ -193,7 +204,8 @@ BaseKr = [
             "ҳа",
             "йўқ"
         ),
-        'more_answers': False
+        'more_answers': False,
+        'long_answers': False
     },
     {
         # 13
@@ -204,7 +216,8 @@ BaseKr = [
             "ўзгармайди",
             "ёмонлашади"
         ),
-        'more_answers': False
+        'more_answers': False,
+        'long_answers': False
     },
     {
         # 14
@@ -215,7 +228,8 @@ BaseKr = [
             "йўқ",
             "жавоб беришим қийин"
         ),
-        'more_answers': False
+        'more_answers': False,
+        'long_answers': False
     },
     {
         # 15
@@ -235,6 +249,7 @@ BaseKr = [
             "бошқа кредит ёки қарзни тўлаш",
             "бошқалар"
         ),
-        'more_answers': True
+        'more_answers': True,
+        'long_answers': True
     }
 ]

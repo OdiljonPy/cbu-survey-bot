@@ -19,7 +19,8 @@ BaseRu = [
             "Хорезмская область",
             "г. Ташкент"
         ),
-        'more_answers': False
+        'more_answers': False,
+        'long_answers': False
     },
     {
         # 2
@@ -28,7 +29,8 @@ BaseRu = [
         'answers': (
             "1", "2", "3", "4", "5", "6", "7", "8 и больше",
         ),
-        'more_answers': False
+        'more_answers': False,
+        'long_answers': False
     },
     {
         # 3
@@ -51,7 +53,8 @@ BaseRu = [
             "индивидуальное предпринимательство",
             "другое",
         ),
-        'more_answers': True
+        'more_answers': True,
+        'long_answers': True
     },
     {
         # 4
@@ -75,7 +78,8 @@ BaseRu = [
             "от 28 до 30 млн сум",
             "больше 30 млн сум",
         ),
-        'more_answers': False
+        'more_answers': False,
+        'long_answers': False
     },
     {
         # 5
@@ -86,7 +90,8 @@ BaseRu = [
             "да",
             "нет",
         ),
-        'more_answers': False
+        'more_answers': False,
+        'long_answers': False
     },
     {
         # 6
@@ -100,7 +105,8 @@ BaseRu = [
             "от 8 до 10 млн сум",
             "больше 10 млн сум",
         ),
-        'more_answers': False
+        'more_answers': False,
+        'long_answers': False
     },
     {
         # 7
@@ -110,7 +116,8 @@ BaseRu = [
             "да",
             "нет"
         ),
-        'more_answers': False
+        'more_answers': False,
+        'long_answers': False
     },
     {
         # 8
@@ -128,7 +135,8 @@ BaseRu = [
 
             "прочие долги",
         ),
-        'more_answers': True
+        'more_answers': True,
+        'long_answers': True
     },
     {
         # 9
@@ -148,7 +156,8 @@ BaseRu = [
             "оплата другого кредита или долга",
             "другое"
         ),
-        'more_answers': True
+        'more_answers': True,
+        'long_answers': True
     },
     {
         # 10
@@ -167,7 +176,8 @@ BaseRu = [
             "от 18 до 20 млн сум",
             "больше 20 млн сум"
         ),
-        'more_answers': False
+        'more_answers': False,
+        'long_answers': False
     },
     {
         # 11
@@ -181,7 +191,8 @@ BaseRu = [
             "от 4 до 5 лет",
             "больше 5 лет",
         ),
-        'more_answers': False
+        'more_answers': False,
+        'long_answers': False
     },
     {
         # 12
@@ -192,7 +203,8 @@ BaseRu = [
             "да",
             "нет"
         ),
-        'more_answers': False
+        'more_answers': False,
+        'long_answers': False
     },
     {
         # 13
@@ -203,7 +215,8 @@ BaseRu = [
             "не изменится",
             "ухудшится"
         ),
-        'more_answers': False
+        'more_answers': False,
+        'long_answers': False
     },
     {
         # 14
@@ -214,7 +227,8 @@ BaseRu = [
             "нет",
             "затрудняюсь ответить"
         ),
-        'more_answers': False
+        'more_answers': False,
+        'long_answers': False
     },
     {
         # 15
@@ -234,6 +248,7 @@ BaseRu = [
             "оплата другого кредита или долга",
             "другое"
         ),
-        'more_answers': True
+        'more_answers': True,
+        'long_answers': True
     }
 ]

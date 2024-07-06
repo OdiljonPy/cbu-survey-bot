@@ -1,5 +1,5 @@
 from aiogram import types, Router, F
-from aiogram.filters import CommandStart
+from aiogram.filters import CommandStart, Command
 from keyboards.inline.inline_btn import user_lang_btn
 from data.config import db
 
@@ -41,32 +41,36 @@ FinishText = {
 }
 
 
+@router.message(Command('help'))
 @router.message(CommandStart())
 async def bot_start(message: types.Message):
     user_lang = await db.get_user(message.from_user.id)
-    if not len(user_lang) < 1:
+    if len(user_lang) < 1:
         await message.answer(
             text=FirstText.format(
                 message.from_user.full_name, message.from_user.full_name, message.from_user.full_name),
             reply_markup=await user_lang_btn()
         )
 
-        # create user
+        await db.create_user(
+            user_id=message.from_user.id,
+            full_name=message.from_user.full_name
+        )
         return
 
-    if not user_lang[0]:
+    if not user_lang.get('lang'):
         await message.answer(
             text=NotSelectLang.format(
                 message.from_user.full_name, message.from_user.full_name, message.from_user.full_name),
             reply_markup=await user_lang_btn()
         )
 
-    if not user_lang[1]:
+    if not user_lang.get('status'):
         await message.answer(
-            text=ProcessText.get(user_lang[0]).format(message.from_user.full_name),
+            text=ProcessText.get(user_lang.get('lang')).format(message.from_user.full_name),
         )
         return
     await message.answer(
-        text=FinishText.get(user_lang[0]).format(message.from_user.full_name)
+        text=FinishText.get(user_lang.get('lang')).format(message.from_user.full_name)
     )
     return

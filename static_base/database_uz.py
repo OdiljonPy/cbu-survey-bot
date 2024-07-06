@@ -19,7 +19,8 @@ BaseUz = [
             "Xorazm viloyati",
             "Toshkent shahri"
         ),
-        'more_answers': False
+        'more_answers': False,
+        'long_answers': False
     },
     {
         # 2
@@ -28,7 +29,8 @@ BaseUz = [
         'answers': (
             "1", "2", "3", "4", "5", "6", "7", "8 va undan ortiq",
         ),
-        'more_answers': False
+        'more_answers': False,
+        'long_answers': False
     },
     {
         # 3
@@ -51,7 +53,8 @@ BaseUz = [
             "yakka tartibdagi tadbirkorlik",
             "boshqalar",
         ),
-        'more_answers': True
+        'more_answers': True,
+        'long_answers': True
     },
     {
         # 4
@@ -75,7 +78,8 @@ BaseUz = [
             "28 mln so‘mdan 30 mln so‘mgacha",
             "30 mln so‘m va undan yuqori",
         ),
-        'more_answers': False
+        'more_answers': False,
+        'long_answers': False
     },
     {
         # 5
@@ -86,7 +90,8 @@ BaseUz = [
             "ha",
             "yo‘q",
         ),
-        'more_answers': False
+        'more_answers': False,
+        'long_answers': False
     },
     {
         # 6
@@ -100,7 +105,8 @@ BaseUz = [
             "8 mln so‘mdan 10 mln so‘mgacha",
             "10 mln so‘m va undan yuqori",
         ),
-        'more_answers': False
+        'more_answers': False,
+        'long_answers': False
     },
     {
         # 7
@@ -110,7 +116,8 @@ BaseUz = [
             "ha",
             "yo‘q"
         ),
-        'more_answers': False
+        'more_answers': False,
+        'long_answers': False
     },
     {
         # 8
@@ -129,7 +136,8 @@ BaseUz = [
 
             "boshqa qarzlar",
         ),
-        'more_answers': True
+        'more_answers': True,
+        'long_answers': True
     },
     {
         # 9
@@ -149,7 +157,8 @@ BaseUz = [
             "boshqa kredit yoki qarzni to‘lash",
             "boshqalar"
         ),
-        'more_answers': True
+        'more_answers': True,
+        'long_answers': True
     },
     {
         # 10
@@ -168,7 +177,8 @@ BaseUz = [
             "18 mln so‘mdan 20 mln so‘mgacha",
             "20 mln so‘m va undan yuqori"
         ),
-        'more_answers': False
+        'more_answers': False,
+        'long_answers': False
     },
     {
         # 11
@@ -182,7 +192,8 @@ BaseUz = [
             "4 yildan 5 yilgacha",
             "5 yil va undan yuqori",
         ),
-        'more_answers': False
+        'more_answers': False,
+        'long_answers': False
     },
     {
         # 12
@@ -193,7 +204,8 @@ BaseUz = [
             "ha",
             "yo‘q"
         ),
-        'more_answers': False
+        'more_answers': False,
+        'long_answers': False
     },
     {
         # 13
@@ -204,7 +216,8 @@ BaseUz = [
             "o‘zgarmaydi",
             "yomonlashadi"
         ),
-        'more_answers': False
+        'more_answers': False,
+        'long_answers': False
     },
     {
         # 14
@@ -215,7 +228,8 @@ BaseUz = [
             "yo‘q",
             "javob berishim qiyin"
         ),
-        'more_answers': False
+        'more_answers': False,
+        'long_answers': False
     },
     {
         # 15
@@ -235,6 +249,7 @@ BaseUz = [
             "boshqa kredit yoki qarzni to‘lash",
             "boshqalar"
         ),
-        'more_answers': True
+        'more_answers': True,
+        'long_answers': True
     }
 ]
