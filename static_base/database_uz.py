@@ -2,254 +2,239 @@ BaseUz = [
     {
         # 1
         'number': 1,
-        'question': "Ҳозирги яшаш ҳудудингизни кўрсатинг",
+        'question': "Hozirgi yashash hududingizni ko‘rsating",
         'answers': (
-            "Қорақалпоғистон Республикаси",
-            "Андижон вилояти",
-            "Бухоро вилояти",
-            "Жиззах вилояти",
-            "Қашқадарё вилояти",
-            "Навоий вилояти",
-            "Наманган вилояти",
-            "Самарқанд вилояти",
-            "Сурхандарё вилояти",
-            "Сирдарё вилояти",
-            "Тошкент вилояти",
-            "Фарғона вилояти",
-            "Хоразм вилояти",
-            "Тошкент шаҳри"
+            "Qoraqalpog‘iston Respublikasi",
+            "Andijon viloyati",
+            "Buxoro viloyati",
+            "Jizzax viloyati",
+            "Qashqadaryo viloyati",
+            "Navoiy viloyati",
+            "Namangan viloyati",
+            "Samarqand viloyati",
+            "Surxandaryo viloyati",
+            "Sirdaryo viloyati",
+            "Toshkent viloyati",
+            "Farg‘ona viloyati",
+            "Xorazm viloyati",
+            "Toshkent shahri"
         ),
         'more_answers': False
     },
     {
         # 2
         'number': 2,
-        'question': "Оила аъзоларингиз неча кишидан иборат?",
+        'question': "Oila a’zolaringiz necha kishidan iborat?",
         'answers': (
-            "1", "2", "3", "4", "5", "6", "7", "8 ва ундан ортиқ",
+            "1", "2", "3", "4", "5", "6", "7", "8 va undan ortiq",
         ),
         'more_answers': False
     },
     {
         # 3
         'number': 3,
-        'question': "Оила аъзоларингизнинг асосий меҳнат фаолият турларини белгиланг\n"
-                    "Бир нечта вариантни танлашингиз мумкин",
+        'question': "Oila a’zolaringizning asosiy mehnat faoliyat turlarini belgilang\n"
+                    "Bir nechta variantni tanlashingiz mumkin",
         'answers': (
-            "қишлоқ, ўрмон ва балиқ хўжалиги",
-            "саноат",
-            "қурилиш",
-            "савдо",
-            "ҳайдовчилик, юк ташиш ва етказиб бериш хизматлари",
-            "ахборот ва алоқа",
-            "молия соҳаси (банк, суғурта ва бошқалар)",
-            "таълим",
-            "соғлиқни сақлаш ва ижтимоий хизматлар",
-            "умумий овқатланиш хизмати",
-            "яшаш хизмати (меҳмонхона)",
-            "санъат, кўнгил очиш ва дам олиш",
-            "якка тартибдаги тадбиркорлик",
-            "бошқалар",
+            "qishloq, o‘rmon va baliq xo‘jaligi",
+            "sanoat",
+            "qurilish",
+            "savdo",
+            "haydovchilik, yuk tashish va yetkazib berish xizmatlari",
+            "axborot va aloqa",
+            "moliya sohasi (bank, sug‘urta va boshqalar)",
+            "ta’lim",
+            "sog‘liqni saqlash va ijtimoiy xizmatlar",
+            "umumiy ovqatlanish xizmati",
+            "yashash xizmati (mehmonxona)",
+            "san’at, ko‘ngil ochish va dam olish",
+            "yakka tartibdagi tadbirkorlik",
+            "boshqalar",
         ),
         'more_answers': True
     },
     {
         # 4
         'number': 4,
-        'question': "Асосий меҳнат фаолияти бўйича оилангизнинг ўртача ойлик даромади қанча?",
+        'question': "Asosiy mehnat faoliyati bo‘yicha oilangizning o‘rtacha oylik daromadi qancha?",
         'answers': (
-            "2 млн сўмдан кам",
-            "2 млн сўмдан 4 млн сўмгача",
-            "4 млн сўмдан 6 млн сўмгача",
-            "6 млн сўмдан 8 млн сўмгача",
-            "8 млн сўмдан 10 млн сўмгача",
-            "10 млн сўмдан 12 млн сўмгача",
-            "12 млн сўмдан 14 млн сўмгача",
-            "14 млн сўмдан 16 млн сўмгача",
-            "16 млн сўмдан 18 млн сўмгача",
-            "18 млн сўмдан 20 млн сўмгача",
-            "20 млн сўмдан 22 млн сўмгача",
-            "22 млн сўмдан 24 млн сўмгача",
-            "24 млн сўмдан 26 млн сўмгача",
-            "26 млн сўмдан 28 млн сўмгача",
-            "28 млн сўмдан 30 млн сўмгача",
-            "30 млн сўм ва ундан юқори",
+            "2 mln so‘mdan kam",
+            "2 mln so‘mdan 4 mln so‘mgacha",
+            "4 mln so‘mdan 6 mln so‘mgacha",
+            "6 mln so‘mdan 8 mln so‘mgacha",
+            "8 mln so‘mdan 10 mln so‘mgacha",
+            "10 mln so‘mdan 12 mln so‘mgacha",
+            "12 mln so‘mdan 14 mln so‘mgacha",
+            "14 mln so‘mdan 16 mln so‘mgacha",
+            "16 mln so‘mdan 18 mln so‘mgacha",
+            "18 mln so‘mdan 20 mln so‘mgacha",
+            "20 mln so‘mdan 22 mln so‘mgacha",
+            "22 mln so‘mdan 24 mln so‘mgacha",
+            "24 mln so‘mdan 26 mln so‘mgacha",
+            "26 mln so‘mdan 28 mln so‘mgacha",
+            "28 mln so‘mdan 30 mln so‘mgacha",
+            "30 mln so‘m va undan yuqori",
         ),
         'more_answers': False
     },
     {
         # 5
         'number': 5,
-        'question': "Оила аъзоларингиз қўшимча доимий даромад манбаига эгами (масалан, уй-жой, ер ва транспорт "
-                    "воситаларини ижарага бериш, банкка қўйилган омонатлар бўйича фоиз даромадлари ва бошқалар)?",
+        'question': "Oila a’zolaringiz qo‘shimcha doimiy daromad manbaiga egami (masalan, uy-joy, yer va transport "
+                    "vositalarini ijaraga berish, bankka qo‘yilgan omonatlar bo‘yicha foiz daromadlari va boshqalar)?",
         'answers': (
-            "ҳа",
-            "йўқ",
+            "ha",
+            "yo‘q",
         ),
         'more_answers': False
     },
     {
         # 6
         'number': 6,
-        'question': "Оилангизнинг қўшимча ўртача ойлик даромади қанча?",
+        'question': "Oilangizning qo‘shimcha o‘rtacha oylik daromadi qancha?",
         'answers': (
-            "2 млн сўмдан кам",
-            "2 млн сўмдан 4 млн сўмгача",
-            "4 млн сўмдан 6 млн сўмгача",
-            "6 млн сўмдан 8 млн сўмгача",
-            "8 млн сўмдан 10 млн сўмгача",
-            "10 млн сўм ва ундан юқори",
+            "2 mln so‘mdan kam",
+            "2 mln so‘mdan 4 mln so‘mgacha",
+            "4 mln so‘mdan 6 mln so‘mgacha",
+            "6 mln so‘mdan 8 mln so‘mgacha",
+            "8 mln so‘mdan 10 mln so‘mgacha",
+            "10 mln so‘m va undan yuqori",
         ),
         'more_answers': False
     },
     {
         # 7
         'number': 7,
-        'question': "Айни вақтда сиз ёки оила аъзоларингизда кредит ёки қарз мажбуриятлари мавжудми?",
+        'question': "Ayni vaqtda siz yoki oila a’zolaringizda kredit yoki qarz majburiyatlari mavjudmi?",
         'answers': (
-            "ҳа",
-            "йўқ"
+            "ha",
+            "yo‘q"
         ),
         'more_answers': False
     },
     {
         # 8
         'number': 8,
-        'question': "Бу қандай кредит ёки қарз мажбуриятлари?\n"
-                    "Бир нечта вариантни танлашингиз мумкин.",
+        'question': "Bu qanday kredit yoki qarz majburiyatlari?\n"
+                    "Bir nechta variantni tanlashingiz mumkin.",
         'answers': (
-            "банк кредити",
+            "bank krediti",
 
-            "нобанк кредит ташкилотлари (ломбардлар, микромолия ташкилотлари, лизинг корхоналари ва бошқалар) "
-            "олдидаги қарз",
+            "nobank kredit tashkilotlari (lombardlar, mikromoliya tashkilotlari, lizing korxonalari va boshqalar) "
+            "oldidagi qarz",
 
-            "номолиявий ташкилотлар олдидаги қарз (масалан, уй-жой, автомобил, маиший техника, электроника ва "
-            "бошқаларни тўғридан-тўғри уй-жой қурувчи компаниялар, автодиллерлар, дўконлар орқали муддатли тўлов "
-            "асосида харид қилиш)",
+            "nomoliyaviy tashkilotlar oldidagi qarz (masalan, uy-joy, avtomobil, maishiy texnika, elektronika va "
+            "boshqalarni to‘g‘ridan-to‘g‘ri uy-joy quruvchi kompaniyalar, avtodillerlar, do‘konlar orqali muddatli "
+            "to‘lov asosida xarid qilish)",
 
-            "бошқа қарзлар",
+            "boshqa qarzlar",
         ),
         'more_answers': True
     },
     {
         # 9
         'number': 9,
-        'question': "Ушбу кредит ёки қарзларни қайси мақсадларда олгансиз?\n"
-                    "Бир нечта вариантни танлашингиз мумкин",
+        'question': "Ushbu kredit yoki qarzlarni qaysi maqsadlarda olgansiz?\n"
+                    "Bir nechta variantni tanlashingiz mumkin",
         'answers': (
-            "кўчмас мулкни сотиб олиш ёки таъмирлаш",
-            "автомобилни сотиб олиш",
-            "истеъмол товарларини (маиший техника, мебел ва бошқалар) сотиб олиш",
-            "хусусий тадбиркорликни ривожлантириш",
-            "даволаниш",
-            "таълим",
-            "тўй маросимини ўтказиш",
-            "дам олиш",
-            "кундалик харажатлар",
-            "бошқа кредит ёки қарзни тўлаш",
-            "бошқалар"
+            "ko‘chmas mulkni sotib olish yoki ta’mirlash",
+            "avtomobilni sotib olish",
+            "iste’mol tovarlarini (maishiy texnika, mebel va boshqalar) sotib olish",
+            "xususiy tadbirkorlikni rivojlantirish",
+            "davolanish",
+            "ta’lim",
+            "to‘y marosimini o‘tkazish",
+            "dam olish",
+            "kundalik xarajatlar",
+            "boshqa kredit yoki qarzni to‘lash",
+            "boshqalar"
         ),
         'more_answers': True
     },
     {
         # 10
         'number': 10,
-        'question': "Ушбу кредит ёки қарз мажбуриятлари бўйича жами ойлик тўлов миқдори қанча?",
+        'question': "Ushbu kredit yoki qarz majburiyatlari bo‘yicha jami oylik to‘lov miqdori qancha?",
         'answers': (
-            "2 млн сўмдан кам",
-            "2 млн сўмдан 4 млн сўмгача",
-            "4 млн сўмдан 6 млн сўмгача",
-            "6 млн сўмдан 8 млн сўмгача",
-            "8 млн сўмдан 10 млн сўмгача",
-            "10 млн сўмдан 12 млн сўмгача",
-            "12 млн сўмдан 14 млн сўмгача",
-            "14 млн сўмдан 16 млн сўмгача",
-            "16 млн сўмдан 18 млн сўмгача",
-            "18 млн сўмдан 20 млн сўмгача",
-            "20 млн сўм ва ундан юқори"
+            "2 mln so‘mdan kam",
+            "2 mln so‘mdan 4 mln so‘mgacha",
+            "4 mln so‘mdan 6 mln so‘mgacha",
+            "6 mln so‘mdan 8 mln so‘mgacha",
+            "8 mln so‘mdan 10 mln so‘mgacha",
+            "10 mln so‘mdan 12 mln so‘mgacha",
+            "12 mln so‘mdan 14 mln so‘mgacha",
+            "14 mln so‘mdan 16 mln so‘mgacha",
+            "16 mln so‘mdan 18 mln so‘mgacha",
+            "18 mln so‘mdan 20 mln so‘mgacha",
+            "20 mln so‘m va undan yuqori"
         ),
         'more_answers': False
     },
     {
         # 11
         'number': 11,
-        'question': "Ушбу кредит ёки қарз мажбуриятларининг сўндириш муддати қанча?",
+        'question': "Ushbu kredit yoki qarz majburiyatlarining so‘ndirish muddati qancha?",
         'answers': (
-            "1 йилдан кам",
-            "1 йилдан 2 йилгача",
-            "2 йилдан 3 йилгача",
-            "3 йилдан 4 йилгача",
-            "4 йилдан 5 йилгача",
-            "5 йил ва ундан юқори",
+            "1 yildan kam",
+            "1 yildan 2 yilgacha",
+            "2 yildan 3 yilgacha",
+            "3 yildan 4 yilgacha",
+            "4 yildan 5 yilgacha",
+            "5 yil va undan yuqori",
         ),
         'more_answers': False
     },
     {
         # 12
         'number': 12,
-        'question': "Кредит ёки қарз мажбуриятларини ўз вақтида қайтаришда (ойлик тўлов) "
-                    "қийинчиликларга дуч келябсизми?",
+        'question': "Kredit yoki qarz majburiyatlarini o‘z vaqtida qaytarishda (oylik to‘lov) qiyinchiliklarga duch "
+                    "kelyabsizmi?",
         'answers': (
-            "ҳа",
-            "йўқ"
+            "ha",
+            "yo‘q"
         ),
         'more_answers': False
     },
     {
         # 13
         'number': 13,
-        'question': "Сизнинг фикрингизча, кейинги 6 ойда оилангизнинг тўлов қобилияти қандай ўзгаради?",
+        'question': "Sizning fikringizcha, keyingi 6 oyda oilangizning to‘lov qobiliyati qanday o‘zgaradi?",
         'answers': (
-            "яхшиланади",
-            "ўзгармайди",
-            "ёмонлашади"
+            "yaxshilanadi",
+            "o‘zgarmaydi",
+            "yomonlashadi"
         ),
         'more_answers': False
     },
     {
         # 14
         'number': 14,
-        'question': "Кейинги 6 ойда сиз ёки оилангиз аъзолари кредит ёки қарз олмоқчимисиз?",
+        'question': "Keyingi 6 oyda siz yoki oilangiz a’zolari kredit yoki qarz olmoqchimisiz?",
         'answers': (
-            "ҳа",
-            "йўқ",
-            "жавоб беришим қийин"
+            "ha",
+            "yo‘q",
+            "javob berishim qiyin"
         ),
         'more_answers': False
     },
     {
         # 15
         'number': 15,
-        'question': "Ушбу кредит ёки қарзларни қайси мақсадларда олмоқчисиз?\n"
-                    "Бир нечта вариантни танлашингиз мумкин",
+        'question': "Ushbu kredit yoki qarzlarni qaysi maqsadlarda olmoqchisiz?\n"
+                    "Bir nechta variantni tanlashingiz mumkin",
         'answers': (
-            "кўчмас мулкни сотиб олиш ёки таъмирлаш",
-            "автомобилни сотиб олиш",
-            "истеъмол товарларини (маиший техника, мебел ва бошқалар) сотиб олиш",
-            "хусусий тадбиркорликни ривожлантириш",
-            "даволаниш",
-            "таълим",
-            "тўй маросимини ўтказиш",
-            "дам олиш",
-            "кундалик харажатлар",
-            "бошқа кредит ёки қарзни тўлаш",
-            "бошқалар"
+            "ko‘chmas mulkni sotib olish yoki ta’mirlash",
+            "avtomobilni sotib olish",
+            "iste’mol tovarlarini (maishiy texnika, mebel va boshqalar) sotib olish",
+            "xususiy tadbirkorlikni rivojlantirish",
+            "davolanish",
+            "ta’lim",
+            "to‘y marosimini o‘tkazish",
+            "dam olish",
+            "kundalik xarajatlar",
+            "boshqa kredit yoki qarzni to‘lash",
+            "boshqalar"
         ),
         'more_answers': True
     }
 ]
-
-
-async def is_more_answers(question_id: int) -> bool:
-    global BaseUz
-    return BaseUz[question_id].get('more_answers')
-
-
-async def get_question_text_uz(question_id: int) -> str:
-    global BaseUz
-    return BaseUz[question_id - 1].get('question')
-
-
-async def get_question_answers_uz(question_id: int) -> list:
-    global BaseUz
-    return list(BaseUz[question_id - 1].get('answers'))

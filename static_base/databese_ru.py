@@ -237,13 +237,3 @@ BaseRu = [
         'more_answers': True
     }
 ]
-
-
-async def get_question_text_ru(question_id: int) -> str:
-    global BaseRu
-    return BaseRu[question_id - 1].get('question')
-
-
-async def get_question_answers_ru(question_id: int) -> list:
-    global BaseRu
-    return list(BaseRu[question_id - 1].get('answers'))

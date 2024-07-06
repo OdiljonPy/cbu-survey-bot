@@ -1,6 +1,6 @@
 from aiogram.utils.keyboard import InlineKeyboardBuilder, InlineKeyboardButton, InlineKeyboardMarkup
 from static_base.cache import check_answer
-from static_base.database_uz import is_more_answers
+from static_base.database_all_method import is_more_answers
 
 
 async def create_more_answer_btn(user_id: int, question_id: int, btn_list: list) -> InlineKeyboardMarkup:
@@ -34,3 +34,12 @@ async def create_inline_btn(user_id: int, question_id: int, btn_list: list) -> I
     if is_more_answers(user_id):
         return await create_more_answer_btn(user_id, question_id, btn_list)
     return await create_one_answer_btn(question_id, btn_list)
+
+
+async def user_lang_btn() -> InlineKeyboardMarkup:
+    btn = InlineKeyboardBuilder()
+    btn.add(InlineKeyboardButton(text="O'zbek tili", callback_data='user_lang:uz'))
+    btn.add(InlineKeyboardButton(text="Ўзбек тили", callback_data='user_lang:kr'))
+    btn.add(InlineKeyboardButton(text="Русский язык", callback_data='user_lang:ru'))
+    btn.adjust(*[2, 1])
+    return btn.as_markup()

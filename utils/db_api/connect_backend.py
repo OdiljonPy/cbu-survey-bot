@@ -6,13 +6,13 @@ class DatabaseRequest:
     def __init__(self, url: str):
         self.url = url
 
-    async def get_user(self, user_id: int) -> Union[str, bool]:
+    async def get_user(self, user_id: int) -> list:
         response = requests.get(
             url=self.url + '/user?user_id=' + str(user_id)
         )
         if response.status_code == 200:
-            return response.json().get('result').get('lang')
-        return False
+            return [response.json().get('result').get('lang'), response.json().get('result').get('status')]
+        return []
 
     async def create_user(self, user_id: int, full_name: str, username: str, lang: str) -> bool:
         response = requests.post(
