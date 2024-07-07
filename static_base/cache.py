@@ -1,7 +1,3 @@
-from redis import Redis
-
-red = Redis(host='localhost', port=6379, db=0)
-
 MoreAnswer = {}
 
 

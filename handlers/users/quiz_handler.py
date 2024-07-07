@@ -47,6 +47,7 @@ async def more_answer_handler_done(call: types.CallbackQuery):
     question_id = int(call.data.split(':')[1])
     answer_ids = await get_answer(call.from_user.id, clear=True)
     if question_id + 1 == 16:
+        await delete_message(call)
         user_lang = await db.get_user(call.from_user.id)
         lang = user_lang.get('lang')
         await call.message.answer(
@@ -88,6 +89,7 @@ async def one_answer_handler_checked(call: types.CallbackQuery):
     question_id = int(call.data.split(':')[1])
     answer_id = int(call.data.split(':')[2])
     if question_id + 1 == 16:
+        await delete_message(call)
         user_lang = await db.get_user(call.from_user.id)
         lang = user_lang.get('lang')
         await call.message.answer(

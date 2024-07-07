@@ -1,5 +1,6 @@
-from aiogram import types, Router, F
-from aiogram.filters import CommandStart, Command
+import asyncio
+from aiogram import types, Router
+from aiogram.filters import CommandStart
 from keyboards.inline.inline_btn import user_lang_btn
 from data.config import db
 
@@ -41,7 +42,6 @@ FinishText = {
 }
 
 
-@router.message(Command('help'))
 @router.message(CommandStart())
 async def bot_start(message: types.Message):
     user_lang = await db.get_user(message.from_user.id)
@@ -72,5 +72,30 @@ async def bot_start(message: types.Message):
         return
     await message.answer(
         text=FinishText.get(user_lang.get('lang')).format(message.from_user.full_name)
+    )
+    return
+
+
+def user_status(user_id):
+    user = asyncio.run(db.get_user(user_id))
+    return user.get('status')
+
+
+@router.message(lambda msg: user_status(msg.from_user.id))
+async def check_user_status(message: types.Message):
+    user_lang = await db.get_user(message.from_user.id)
+    lang = user_lang.get('lang')
+    await message.answer(
+        text=FinishText.get(lang).format(message.from_user.full_name)
+    )
+    return
+
+
+@router.message(lambda msg: not user_status(msg.from_user.id))
+async def check_user_status(message: types.Message):
+    user_lang = await db.get_user(message.from_user.id)
+    lang = user_lang.get('lang')
+    await message.answer(
+        text=ProcessText.get(lang).format(message.from_user.full_name)
     )
     return
