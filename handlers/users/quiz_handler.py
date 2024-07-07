@@ -46,6 +46,28 @@ async def more_answer_handler_step(call: types.CallbackQuery):
 async def more_answer_handler_done(call: types.CallbackQuery):
     question_id = int(call.data.split(':')[1])
     answer_ids = await get_answer(call.from_user.id, clear=True)
+    if question_id + 1 == 16:
+        user_lang = await db.get_user(call.from_user.id)
+        lang = user_lang.get('lang')
+        await call.message.answer(
+            text={
+                'uz': "Ushbu so‘rovnomada ishtirok etganingiz uchun rahmat!",
+                'ru': "Благодарим вас за участие в нашем опросе!",
+                'kr': "Ушбу сўровномада иштирок этганингиз учун раҳмат!"
+            }.get(lang)
+        )
+        await db.save_answer(
+            user_id=call.from_user.id,
+            question_id=question_id,
+            answer_ids=answer_ids,
+        )
+        await db.create_user(
+            user_id=call.from_user.id,
+            full_name=call.from_user.full_name,
+            lang=lang,
+            status=True
+        )
+        return
     await db.save_answer(
         user_id=call.from_user.id,
         question_id=question_id,
@@ -65,18 +87,39 @@ async def more_answer_handler_done(call: types.CallbackQuery):
 async def one_answer_handler_checked(call: types.CallbackQuery):
     question_id = int(call.data.split(':')[1])
     answer_id = int(call.data.split(':')[2])
+    if question_id + 1 == 16:
+        user_lang = await db.get_user(call.from_user.id)
+        lang = user_lang.get('lang')
+        await call.message.answer(
+            text={
+                'uz': "Ushbu so‘rovnomada ishtirok etganingiz uchun rahmat!",
+                'ru': "Благодарим вас за участие в нашем опросе!",
+                'kr': "Ушбу сўровномада иштирок этганингиз учун раҳмат!"
+            }.get(lang)
+        )
+        await db.save_answer(
+            user_id=call.from_user.id,
+            question_id=question_id,
+            answer_ids=answer_id,
+        )
+        await db.create_user(
+            user_id=call.from_user.id,
+            full_name=call.from_user.full_name,
+            lang=lang,
+            status=True
+        )
+        return
+    message = await create_inline_btn(call.from_user.id, question_id + 1)
 
-    print(question_id)
+    if question_id == 5:  # 5
+        text = await get_question_answers(question_id=5, user_id=call.from_user.id)
+        if text[answer_id] in ["йўқ", "yo‘q", "нет"]:
+            message = await create_inline_btn(call.from_user.id, question_id + 2)
 
-    if question_id == 4:  # 5
-        text = await get_question_answers(question_id + 1, user_id=call.from_user.id)
-        if text[1] in ["йўқ", "yo‘q", "нет"]:
-            question_id += 1
-
-    if answer_id == 6:  # 7
-        text = await get_question_answers(question_id + 1, user_id=call.from_user.id)
-        if text[1] in ["йўқ", "yo‘q", "нет"]:
-            question_id += 4
+    if question_id == 7:  # 7
+        text = await get_question_answers(question_id=7, user_id=call.from_user.id)
+        if text[answer_id] in ["йўқ", "yo‘q", "нет"]:
+            message = await create_inline_btn(call.from_user.id, question_id + 6)
 
     await db.save_answer(
         user_id=call.from_user.id,
@@ -84,7 +127,6 @@ async def one_answer_handler_checked(call: types.CallbackQuery):
         answer_ids=answer_id,
     )
 
-    message = await create_inline_btn(call.from_user.id, question_id + 1)
     await delete_message(call)
     await call.message.answer(
         text=message.get('text'),

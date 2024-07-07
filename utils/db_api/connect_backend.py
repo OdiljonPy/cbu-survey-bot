@@ -19,13 +19,14 @@ class DatabaseRequest:
             }
         return {}
 
-    async def create_user(self, user_id: int, full_name: str, lang: str = '') -> bool:
+    async def create_user(self, user_id: int, full_name: str, lang: str = '', status: bool = False) -> bool:
         response = requests.post(
             url=self.url + '/create/user/',
             json={
                 'tg_user_id': user_id,
                 'full_name': full_name,
                 'language': lang,
+                'status': status
             }
         )
         if response.status_code == 201:
