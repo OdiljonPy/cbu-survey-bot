@@ -88,7 +88,11 @@ async def more_answer_handler_done(call: types.CallbackQuery):
 async def one_answer_handler_checked(call: types.CallbackQuery):
     question_id = int(call.data.split(':')[1])
     answer_id = int(call.data.split(':')[2])
-    if question_id + 1 == 16:
+    text = await get_question_answers(question_id=14, user_id=call.from_user.id)
+    if question_id + 1 == 16 or (
+            question_id == 14 and text[answer_id] in ["йўқ", "yo‘q", "нет", "жавоб беришим қийин",
+                                                      "javob berishim qiyin", "затрудняюсь ответить"]
+    ):
         await delete_message(call)
         user_lang = await db.get_user(call.from_user.id)
         lang = user_lang.get('lang')
@@ -113,15 +117,15 @@ async def one_answer_handler_checked(call: types.CallbackQuery):
         return
     message = await create_inline_btn(call.from_user.id, question_id + 1)
 
-    if question_id == 5:  # 5
-        text = await get_question_answers(question_id=5, user_id=call.from_user.id)
-        if text[answer_id] in ["йўқ", "yo‘q", "нет"]:
-            message = await create_inline_btn(call.from_user.id, question_id + 2)
+    # if question_id == 5:  # 5
+    #     text = await get_question_answers(question_id=5, user_id=call.from_user.id)
+    #     if text[answer_id] in ["йўқ", "yo‘q", "нет"]:
+    #         message = await create_inline_btn(call.from_user.id, question_id + 2)
 
     if question_id == 7:  # 7
         text = await get_question_answers(question_id=7, user_id=call.from_user.id)
         if text[answer_id] in ["йўқ", "yo‘q", "нет"]:
-            message = await create_inline_btn(call.from_user.id, question_id + 6)
+            message = await create_inline_btn(call.from_user.id, question_id + 7)
 
     await db.save_answer(
         user_id=call.from_user.id,

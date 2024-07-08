@@ -3,6 +3,7 @@ from aiogram import types, Router
 from aiogram.filters import CommandStart
 from keyboards.inline.inline_btn import user_lang_btn
 from data.config import db
+from utils.misc.assistant import delete_message
 
 router = Router()
 
@@ -84,9 +85,21 @@ def user_status(user_id):
 @router.message(lambda msg: user_status(msg.from_user.id))
 async def check_user_status(message: types.Message):
     user_lang = await db.get_user(message.from_user.id)
+    await delete_message(message)
     lang = user_lang.get('lang')
     await message.answer(
         text=FinishText.get(lang).format(message.from_user.full_name)
+    )
+    return
+
+
+@router.callback_query(lambda call: user_status(call.from_user.id))
+async def check_user_status(call: types.CallbackQuery):
+    user_lang = await db.get_user(call.from_user.id)
+    await delete_message(call)
+    lang = user_lang.get('lang')
+    await call.message.answer(
+        text=FinishText.get(lang).format(call.from_user.full_name)
     )
     return
 

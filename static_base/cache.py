@@ -16,7 +16,6 @@ async def get_answer(user_id: int | str, clear: bool = False):
 async def check_answer(user_id: int | str, answer_id: int):
     global MoreAnswer
     user_id = str(user_id)
-    print('check_answer', MoreAnswer)
     if user_id not in MoreAnswer:
         MoreAnswer[user_id] = {'answer': [answer_id]}
         return False
