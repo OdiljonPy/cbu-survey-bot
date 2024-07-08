@@ -2,7 +2,7 @@ BaseUz = [
     {
         # 1
         'number': 1,
-        'question': "Hozirgi yashash hududingizni ko‘rsating",
+        'question': "<b>Hozirgi yashash hududingizni ko‘rsating</b>",
         'answers': (
             "Qoraqalpog‘iston Respublikasi",
             "Andijon viloyati",
@@ -25,7 +25,7 @@ BaseUz = [
     {
         # 2
         'number': 2,
-        'question': "Oila a’zolaringiz necha kishidan iborat?",
+        'question': "<b>Oila a’zolaringiz necha kishidan iborat?</b>",
         'answers': (
             "1", "2", "3", "4", "5", "6", "7", "8 va undan ortiq",
         ),
@@ -35,8 +35,8 @@ BaseUz = [
     {
         # 3
         'number': 3,
-        'question': "Oila a’zolaringizning asosiy mehnat faoliyat turlarini belgilang\n"
-                    "Bir nechta variantni tanlashingiz mumkin",
+        'question': "<b>Oila a’zolaringizning asosiy mehnat faoliyat turlarini belgilang</b>\n"
+                    "<i>Bir nechta variantni tanlashingiz mumkin</i>",
         'answers': (
             "qishloq, o‘rmon va baliq xo‘jaligi",
             "sanoat",
@@ -59,7 +59,7 @@ BaseUz = [
     {
         # 4
         'number': 4,
-        'question': "Asosiy mehnat faoliyati bo‘yicha oilangizning o‘rtacha oylik daromadi qancha?",
+        'question': "<b>Asosiy mehnat faoliyati bo‘yicha oilangizning o‘rtacha oylik daromadi qancha?</b>",
         'answers': (
             "2 mln so‘mdan kam",
             "2 mln so‘mdan 4 mln so‘mgacha",
@@ -84,8 +84,9 @@ BaseUz = [
     {
         # 5
         'number': 5,
-        'question': "Oila a’zolaringiz qo‘shimcha doimiy daromad manbaiga egami (masalan, uy-joy, yer va transport "
-                    "vositalarini ijaraga berish, bankka qo‘yilgan omonatlar bo‘yicha foiz daromadlari va boshqalar)?",
+        'question': "<b>Oila a’zolaringiz qo‘shimcha doimiy daromad manbaiga egami (masalan, uy-joy, yer va transport "
+                    "vositalarini ijaraga berish, bankka qo‘yilgan omonatlar bo‘yicha foiz "
+                    "daromadlari va boshqalar)?</b>",
         'answers': (
             "ha",
             "yo‘q",
@@ -96,7 +97,7 @@ BaseUz = [
     {
         # 6
         'number': 6,
-        'question': "Oilangizning qo‘shimcha o‘rtacha oylik daromadi qancha?",
+        'question': "<b>Oilangizning qo‘shimcha o‘rtacha oylik daromadi qancha?</b>",
         'answers': (
             "2 mln so‘mdan kam",
             "2 mln so‘mdan 4 mln so‘mgacha",
@@ -111,7 +112,7 @@ BaseUz = [
     {
         # 7
         'number': 7,
-        'question': "Ayni vaqtda siz yoki oila a’zolaringizda kredit yoki qarz majburiyatlari mavjudmi?",
+        'question': "<b>Ayni vaqtda siz yoki oila a’zolaringizda kredit yoki qarz majburiyatlari mavjudmi?</b>",
         'answers': (
             "ha",
             "yo‘q"
@@ -122,8 +123,8 @@ BaseUz = [
     {
         # 8
         'number': 8,
-        'question': "Bu qanday kredit yoki qarz majburiyatlari?\n"
-                    "Bir nechta variantni tanlashingiz mumkin.",
+        'question': "<b>Bu qanday kredit yoki qarz majburiyatlari?</b>\n"
+                    "<i>Bir nechta variantni tanlashingiz mumkin.</i>",
         'answers': (
             "bank krediti",
 
@@ -142,8 +143,8 @@ BaseUz = [
     {
         # 9
         'number': 9,
-        'question': "Ushbu kredit yoki qarzlarni qaysi maqsadlarda olgansiz?\n"
-                    "Bir nechta variantni tanlashingiz mumkin",
+        'question': "<b>Ushbu kredit yoki qarzlarni qaysi maqsadlarda olgansiz?</b>\n"
+                    "<i>Bir nechta variantni tanlashingiz mumkin</i>",
         'answers': (
             "ko‘chmas mulkni sotib olish yoki ta’mirlash",
             "avtomobilni sotib olish",
@@ -163,7 +164,7 @@ BaseUz = [
     {
         # 10
         'number': 10,
-        'question': "Ushbu kredit yoki qarz majburiyatlari bo‘yicha jami oylik to‘lov miqdori qancha?",
+        'question': "<b>Ushbu kredit yoki qarz majburiyatlari bo‘yicha jami oylik to‘lov miqdori qancha?</b>",
         'answers': (
             "2 mln so‘mdan kam",
             "2 mln so‘mdan 4 mln so‘mgacha",
@@ -183,7 +184,7 @@ BaseUz = [
     {
         # 11
         'number': 11,
-        'question': "Ushbu kredit yoki qarz majburiyatlarining so‘ndirish muddati qancha?",
+        'question': "<b>Ushbu kredit yoki qarz majburiyatlarining so‘ndirish muddati qancha?</b>",
         'answers': (
             "1 yildan kam",
             "1 yildan 2 yilgacha",
@@ -198,8 +199,8 @@ BaseUz = [
     {
         # 12
         'number': 12,
-        'question': "Kredit yoki qarz majburiyatlarini o‘z vaqtida qaytarishda (oylik to‘lov) qiyinchiliklarga duch "
-                    "kelyabsizmi?",
+        'question': "<b>Kredit yoki qarz majburiyatlarini o‘z vaqtida qaytarishda (oylik to‘lov) qiyinchiliklarga duch "
+                    "kelyabsizmi?</b>",
         'answers': (
             "ha",
             "yo‘q"
@@ -210,7 +211,7 @@ BaseUz = [
     {
         # 13
         'number': 13,
-        'question': "Sizning fikringizcha, keyingi 6 oyda oilangizning to‘lov qobiliyati qanday o‘zgaradi?",
+        'question': "<b>Sizning fikringizcha, keyingi 6 oyda oilangizning to‘lov qobiliyati qanday o‘zgaradi?</b>",
         'answers': (
             "yaxshilanadi",
             "o‘zgarmaydi",
@@ -222,7 +223,7 @@ BaseUz = [
     {
         # 14
         'number': 14,
-        'question': "Keyingi 6 oyda siz yoki oilangiz a’zolari kredit yoki qarz olmoqchimisiz?",
+        'question': "<b>Keyingi 6 oyda siz yoki oilangiz a’zolari kredit yoki qarz olmoqchimisiz?</b>",
         'answers': (
             "ha",
             "yo‘q",
@@ -234,8 +235,8 @@ BaseUz = [
     {
         # 15
         'number': 15,
-        'question': "Ushbu kredit yoki qarzlarni qaysi maqsadlarda olmoqchisiz?\n"
-                    "Bir nechta variantni tanlashingiz mumkin",
+        'question': "<b>Ushbu kredit yoki qarzlarni qaysi maqsadlarda olmoqchisiz?</b>\n"
+                    "<i>Bir nechta variantni tanlashingiz mumkin</i>",
         'answers': (
             "ko‘chmas mulkni sotib olish yoki ta’mirlash",
             "avtomobilni sotib olish",

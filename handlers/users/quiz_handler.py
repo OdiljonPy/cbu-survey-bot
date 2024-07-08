@@ -5,6 +5,7 @@ from aiogram import types, F, Router
 from data.config import db
 from utils.misc.assistant import delete_message
 from static_base.database_all_method import get_question_answers
+from aiogram.enums import ParseMode
 
 router = Router()
 
@@ -23,7 +24,8 @@ async def user_lang_callback(call: types.CallbackQuery):
     message = await create_inline_btn(call.from_user.id, question_id=1)
     await call.message.answer(
         text=message.get('text'),
-        reply_markup=message.get('btn')
+        reply_markup=message.get('btn'),
+        parse_mode=ParseMode.HTML
     )
 
 
@@ -37,7 +39,8 @@ async def more_answer_handler_step(call: types.CallbackQuery):
     with suppress(Exception):
         await call.message.edit_text(
             text=message.get('text'),
-            reply_markup=message.get('btn')
+            reply_markup=message.get('btn'),
+            parse_mode=ParseMode.HTML
         )
     return
 
@@ -79,7 +82,8 @@ async def more_answer_handler_done(call: types.CallbackQuery):
     await delete_message(call)
     await call.message.answer(
         text=message.get('text'),
-        reply_markup=message.get('btn')
+        reply_markup=message.get('btn'),
+        parse_mode=ParseMode.HTML
     )
     return
 
@@ -136,5 +140,6 @@ async def one_answer_handler_checked(call: types.CallbackQuery):
     await delete_message(call)
     await call.message.answer(
         text=message.get('text'),
-        reply_markup=message.get('btn')
+        reply_markup=message.get('btn'),
+        parse_mode=ParseMode.HTML
     )
