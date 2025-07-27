@@ -49,6 +49,19 @@ async def more_answer_handler_step(call: types.CallbackQuery):
 async def more_answer_handler_done(call: types.CallbackQuery):
     question_id = int(call.data.split(':')[1])
     answer_ids = await get_answer(call.from_user.id, clear=True)
+
+    user_lang = await db.get_user(call.from_user.id)
+    lang = user_lang.get("lang")
+
+    if not answer_ids:
+        msg = {
+            'uz': "Iltimos, kamida bitta javobni tanlang!",
+            'ru': "Пожалуйста, выберите хотя бы один вариант ответа!",
+            'kr': "Илтимос, камида битта жавобни танланг!"
+        }.get(lang, "Iltimos, kamida bitta javobni tanlang!")
+        await call.answer(msg, show_alert=True)
+        return
+
     if question_id + 1 == 16:
         await delete_message(call)
         user_lang = await db.get_user(call.from_user.id)
